@@ -18,7 +18,11 @@ Milestones:
 
 
 Psuedo Code:
-    
-
+    Import Packages: Numpy, scipy, matplotlib, etc
+    Main Menu Options: 
+    Create Classes: Trucks, Cars, Hybrids, Electric
+    User Inputs: Upfront cost, brand, type of vehicle, loan vs cahs?, foreign vs domestic?, fuel type
+    Calculate cost of owning each car
+    Present results: plots
 
 
