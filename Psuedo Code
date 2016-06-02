@@ -1,9 +1,19 @@
 Project Overview:
-We will design a program which calculate the total cost of owning different ov
-
-
+We will design a program which calculate the total cost of owning different cars over a period
+of time. 
 
 Milestones:
+Calculate the total cost of owning each car over a period of 5 years
+    Use the MPG, Total Cost, and depreciation of the car.
+    Graph the results using a bar graph
+Add in subclasses of cars
+    Trucks, Cars, Hybrids, Electric
+    Fuel Types: Deisel, gas, electricity
+Calculate the total cost of owning each car over different periods of time
+    Graph the results of each car's total cost over time.
+
+
+
 
 
 Psuedo Code:
