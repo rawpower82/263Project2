@@ -1,3 +1,7 @@
+Hunter Rawson
+Kraig Farrar
+Zachary Broyles
+
 Project Overview:
     We will design a program which calculate the total cost of owning different cars over a period
     of time. 
@@ -19,7 +23,7 @@ Milestones:
 
 Psuedo Code:
     Import Packages: Numpy, scipy, matplotlib, etc
-    Main Menu Options: 
+    Main Menu Options: Input Car, View list of Cars, Compare Costs, Remove Car
     Create Classes: Trucks, Cars, Hybrids, Electric
     User Inputs: Upfront cost, brand, type of vehicle, loan vs cahs?, foreign vs domestic?, fuel type
     Calculate cost of owning each car
