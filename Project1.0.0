@@ -1,0 +1,106 @@
+import matplotlib.pyplot as plt
+import scipy as sp
+import numpy as np
+
+class vehicle:  # Definition of vehicle class, which is used to store different vehicles which are input
+    
+    def __init__(self, make, model, vehicle_type, price, fuel_type, mpg, miles_per_year):
+        self.make = make
+        self.model = model
+        self.vehicle_type = vehicle_type
+        self.price = price
+        self.fuel = fuel_type
+        self.mpg = mpg
+        self.mpyr = miles_per_year
+        
+    def get_make(self):
+        return self.make
+    
+    def get_model(self):
+        return self.model
+    
+    def get_vehicle_type(self):
+        return self.vehicle_type
+    
+    def get_price(self):
+        return self.price
+    
+    def get_fuel(self):
+        return self.fuel
+    
+    def get_mpg(self):
+        return self.mpg
+    
+    def change_make(self, make):
+        self.make = make
+        
+        
+        
+# Output Begins Here
+print("Welcome to (INSERT PROGRAM NAME HERE)!")
+
+# Option which is changed to navigate in menu
+menu_option = 1
+
+# List which will store vehicles input into the program
+inventory = list()
+
+# Tests, feel free to ignore
+inventory.append("hello")
+inventory.append("hi")
+del inventory[1]
+
+while menu_option != 0:
+    print ("\n\nMAIN MENU:\n\t1. View Vehicle Inventory\n\t2. Add a Vehicle to the Inventory")
+    print ("\t3. Remove a Vehicle from the Inventory\n\t4. Compare Costs\n\t0. Exit Program\n ")
+    menu_option = int(input("Please select an option:"))
+    if menu_option == 1:
+        print ("\n\nView Vehicle Inventory:")
+        for i in range(0,len(inventory)):
+            print (inventory[i])
+    elif menu_option == 2:
+        print ("\n\nAdd a Vehicle to the Inventory:")
+        
+    elif menu_option == 3:
+        print ("\n\nRemove a Vehicle from the Inventory:")
+        
+    elif menu_option == 4:
+        print ("\n\nCompare Costs:")
+        
+        
+print ("\nGoodbye!")
+
+# End of Program
+
+
+
+
+Kraig's Code:
+"""
+cost=input("input the purchase price of the car:")
+fuel=input("input the fuel type of the car: 'gas', 'diesel', 'electric', or 'hybrid':")
+mpg=input("input the fuel economy of the car in miles per gallon:")
+type=input("input the type of vehicle, 'truck' or 'car' wagons, sedans and hatchbacks \
+        are defined as cars, while trucks, SUV's and mini-vans qualify as trucks")
+miles_per_year=input("how many miles will be driven each year?")
+gas_price=input("what do you think the cost of gas will average per gallon over the next five years?")
+"""
+
+"""
+if type==truck:
+  maintenance=
+elif type==car:
+  maintenance=
+total_cost_5year=cost*.6+(miles_per_year*5*gas_price/mpg)+maintenance
+"""
+
+
+"""
+***********************************************LEGEND***********************************************
+cost = purchase price of the car
+fuel = fuel type used by the car
+mpg = miles per gallon
+type = type of car (car or truck)
+miles_per_year = number of miles that the driver plans to drive per year
+gas_price = estimate for average gas price over the next five years (we may change this to be calculated for a range later on)
+"""
