@@ -19,6 +19,7 @@ Milestones:
         Cash vs. Loan 
         Brand
         Foreign vs. Domestic
+    Use More Sophisticated Calculation of Depreciation
 
 
 Psuedo Code:
@@ -29,4 +30,5 @@ Psuedo Code:
     Calculate cost of owning each car
     Present results: plots
 
-
+Posible Source for calculating depreciation:
+    http://www.edmunds.com/car-buying/how-fast-does-my-new-car-lose-value-infographic.html
