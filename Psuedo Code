@@ -34,3 +34,32 @@ Psuedo Code:
 Posible Source for calculating depreciation/cost of ownership:
     http://www.edmunds.com/car-buying/how-fast-does-my-new-car-lose-value-infographic.html
 http://www.kbb.com/new-cars/total-cost-of-ownership/?r=819900559084550500
+
+
+
+
+
+cost=input("input the purchase price of the car:")
+fuel=input("input the fuel type of the car: 'gas', 'diesel', 'electric', or 'hybrid':")
+mpg=input("input the fuel economy of the car in miles per gallon:")
+type=input("input the type of vehicle, 'truck' or 'car' wagons, sedans and hatchbacks \
+        are defined as cars, while trucks, SUV's and mini-vans qualify as trucks")
+miles_per_year=input("how many miles will be driven each year?")
+gas_price=input("what do you think the cost of gas will average per gallon over the next five years?")
+
+"""
+if type==truck:
+  maintenance=
+elif type==car:
+  maintenance=
+total_cost_5year=cost*.6+(miles_per_year*5*gas_price/mpg)+maintenance
+"""
+
+
+"""
+cost = purchase price of the car
+fuel = fuel type used by the car
+mpg = miles per gallon
+type = type of car (car or truck)
+miles_per_year = number of miles that the driver plans to drive per year
+gas_price 
