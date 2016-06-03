@@ -10,7 +10,7 @@ Milestones:
     Calculate the total cost of owning each car over a period of 5 years
         Use the MPG, Total Cost, and depreciation of the car.
         Graph the results using a bar graph
-    Add in subclasses of cars
+    Add in variables for different types of cars
         Trucks, Cars, Hybrids, Electric
         Fuel Types: Deisel, gas, electricity
     Calculate the total cost of owning each car over different periods of time
