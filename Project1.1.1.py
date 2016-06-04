@@ -174,7 +174,7 @@ while menu_option != 0:
             while valid == False:    # Confirm that a correct choice is entered
                 try:
                     inventory[int(remove_option) - 1].getMake()
-                    if remove_option > 0:
+                    if int(remove_option) > 0:
                         valid = True
                 except:
                     remove_option = input("\t\tInvalid Input. Please enter the corresponding number: ")
