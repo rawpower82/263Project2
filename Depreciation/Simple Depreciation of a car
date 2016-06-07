@@ -1,0 +1,10 @@
+#New 100%
+#Right off the lot 91%
+#1 year 81%
+#2 years 69%
+#3 years 58%
+#4 years 49%
+#5 years 40%
+#On average lose 60% of inital car value in five years
+if vehicle_type==car
+  depreciation=price*.4 #Five years
