@@ -1,7 +1,6 @@
 from lxml import html
 import requests
 
-#page=requests.get('http://www.kbb.com/new-cars/?hpnav=true')
 page=requests.get("https://en.wikipedia.org/wiki/List_of_current_automobile_manufacturers_%28alphabetical%29")
 tree=html.fromstring(page.content)
 
