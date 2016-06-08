@@ -1,0 +1,63 @@
+import scipy as sp
+import numpy as np
+
+class vehicle:  # Definition of vehicle class, which is used to store different vehicles which are input
+    
+    def __init__(self, year, make, model, vehicle_type, price, fuel_type, mpg):
+        self.year = year
+        self.make = make
+        self.model = model
+        self.vehicle_type = vehicle_type
+        self.price = price
+        self.fuel = fuel_type
+        self.mpg = mpg
+        
+    def getYear(self):
+        return self.year
+    
+    def getMake(self):
+        return self.make
+    
+    def getModel(self):
+        return self.model
+    
+    def getVehicle_type(self):
+        return self.vehicle_type
+    
+    def getPrice(self):
+        return self.price
+    
+    def getFuel(self):
+        return self.fuel
+    
+    def getMPG(self):
+        return self.mpg
+    
+# Let's Create a List of 8 Cars
+
+inventory = list() 
+new_vehicle = vehicle("2016", "Subaru", "Legacy", "Car", 30000, "Gas", 32)
+new_vehicle1 = vehicle("2016", "Chevy", "Camero", "Car", 80000, "Gas", 17)
+new_vehicle2 = vehicle("2016", "Subaru", "Outback", "Car", 35000, "Gas", 27)
+new_vehicle3 = vehicle("2016", "Toyota", "Carrola", "Car", 17000, "Gas", 30)
+new_vehicle4 = vehicle("2016", "Ford", "F-150", "Truck", 40000, "Diesel", 20)
+new_vehicle5 = vehicle("2016", "Honda", "Civic", "Car", 20000, "Gas", 34)
+new_vehicle6 = vehicle("2016", "Toyota", "Prius", "Hybrid", 60000, "Gas & Electricity", 32)
+new_vehicle7 = vehicle("2016", "Nissan", "Leaf", "Electric", 65000, "Electricity", 1000000000000)
+inventory.append(new_vehicle)
+inventory.append(new_vehicle1)
+inventory.append(new_vehicle2)
+inventory.append(new_vehicle3)
+inventory.append(new_vehicle4)
+inventory.append(new_vehicle5)
+inventory.append(new_vehicle6)
+inventory.append(new_vehicle7)
+
+# This loop will give you values of i from 0 to 7 (which are the indexes of the vehicles in the inventory)
+for i in range(0,len(inventory)):
+    print ("This car's model is: ")
+    print ( inventory[i].getModel() ) # This will print the model of every car.
+    print ("The MPG of this car multiplied by its price is:")
+    math = inventory[i].getMPG() * inventory[i].getPrice() # This will multiply each car's MPG by it's own Price
+    print (math)
+    print ()
