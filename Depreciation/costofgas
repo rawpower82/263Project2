@@ -1,2 +1,2 @@
-cost=(miles_per_year/inventory[1].getMPG)*gas_price
-print (cost)
+cost_per_year=(miles_per_year/inventory[1].getMPG)*gas_price
+print (cost_per_year)
