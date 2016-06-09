@@ -1,15 +1,20 @@
 #New 100%
-#Right off the lot 91%
+#Right off the lot sellback price 91%
 #1 year 81%
 #2 years 69%
 #3 years 58%
 #4 years 49%
 #5 years 40%
 #On average lose 60% of inital car value in five years
-#6 years 32%
-#7 years 24%
-#8 years 16%
-#9 years 8%
-#By year 10 depreciation is negligable 0%
-if vehicle_type==car
-  depreciation=price*.4 #Five years
+#6 years 34%
+#7 years 27%
+#8 years 22%
+#9 years 18%
+#By year 10 depreciation is negligable, average sellback price is 10%
+
+
+priceDepreciationValues=[.91,.81,.69,.58,.49,.40,.34,.27,.22,.18,.10]
+for i in range(0,1):
+    print ("This car's current sellback price is: ")
+    math = inventory[1].getPrice() * priceDepreciationValues[min(2016 - int(inventory[1].getYear()),(len(priceDepreciationValues))-1)]
+    print (int(math))
