@@ -237,8 +237,35 @@ while menu_option != 0:
     # Invalid Entries
     else:
         print ("\n\nInvalid Entry.")
-        
+maintenance=3906.765451+price*0.042379218
+depreciation=.6*price
+fuel_cost=5*miles_per_year*gas_price/mpg
+total_cost=fuel_cost+depreciation+maintenance
 
+total_cost_5year=cost*.6+(miles_per_year*5*gas_price/mpg)+maintenance
+        
+trace1 = go.Bar(
+    x=['car name'],
+    y=["depreciation"],
+    name='depreciation'
+)
+trace2 = go.Bar(
+    x=["car name"],
+    y=['maintenance'],
+    name='maintenance'
+)
+trace3 = go.Bar(
+    x=["car name"],
+    y=['fuel_cost'],
+    name='fuel_cost'
+)
+data = [trace1, trace2, trace3]
+layout = go.Layout(
+    barmode='stack'
+)
+
+fig = go.Figure(data=data, layout=layout)
+py.iplot(fig, filename='stacked-bar')
 # End of Program
 
 
@@ -246,11 +273,7 @@ while menu_option != 0:
 
 
 """
-if vehicle_type==truck:
-  maintenance=
-elif vehicle)type==car:
-  maintenance=
-total_cost_5year=cost*.6+(miles_per_year*5*gas_price/mpg)+maintenance
+
 """
 
 
