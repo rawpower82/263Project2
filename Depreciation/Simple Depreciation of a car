@@ -1,3 +1,8 @@
+# I added the sellback prices over ten years, the only change needed now is changing 2016 to the "current year" variable
+#also when running the code I noticed it might be confusing if you were trying to figure out which car was being talked about
+#unless you happen to have memorized the order of the cars in the inventory you wont be able to tell which car is which
+#i dont know if there is a way already set up so the the vehicle variable could be shown
+
 #New 100%
 #Right off the lot sellback price 91%
 #1 year 81%
@@ -17,4 +22,23 @@ priceDepreciationValues=[.91,.81,.69,.58,.49,.40,.34,.27,.22,.18,.10]
 for i in range(0,len(inventory)):
     depval = inventory[i].getPrice() * priceDepreciationValues[min(2016 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
     print ("This car's current sellback price is: ", int(depval))
-
+    depval1yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 1 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 1 year is: ", int(depval1yr))
+    depval2yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 2 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 2 years is: ", int(depval2yr))
+    depval3yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 3 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 3 years is: ", int(depval3yr))
+    depval4yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 4 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 4 years is: ", int(depval4yr))
+    depval5yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 5 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 5 years is: ", int(depval5yr))
+    depval6yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 6 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 6 years is: ", int(depval6yr))
+    depval7yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 7 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 7 years is: ", int(depval7yr))
+    depval8yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 8 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 8 years is: ", int(depval8yr))
+    depval9yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 9 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 9 years is: ", int(depval9yr))
+    depval10yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 10 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
+    print ("This car's sellback price in 10 years is: ", int(depval10yr))
