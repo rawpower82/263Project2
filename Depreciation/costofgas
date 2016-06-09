@@ -1,0 +1,2 @@
+cost=(miles_per_year/inventory[1].getMPG)*gas_price
+print (cost)
