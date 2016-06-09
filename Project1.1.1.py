@@ -266,6 +266,8 @@ layout = go.Layout(
 
 fig = go.Figure(data=data, layout=layout)
 py.iplot(fig, filename='stacked-bar')
+
+print("total cost for 5 years is"+total_cost)
 # End of Program
 
 
