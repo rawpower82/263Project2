@@ -15,6 +15,7 @@
 
 priceDepreciationValues=[.91,.81,.69,.58,.49,.40,.34,.27,.22,.18,.10]
 for i in range(0,1):
-    print ("This car's current sellback price is: ")
+    
     math = inventory[1].getPrice() * priceDepreciationValues[min(2016 - int(inventory[1].getYear()),(len(priceDepreciationValues))-1)]
-    print (int(math))
+    print ("This car's current sellback price is: ", int(math))
+
