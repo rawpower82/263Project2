@@ -42,3 +42,4 @@ for i in range(0,len(inventory)):
     print ("This car's sellback price in 9 years is: ", int(depval9yr))
     depval10yr = inventory[i].getPrice() * priceDepreciationValues[min(2016 + 10 - int(inventory[i].getYear()),(len(priceDepreciationValues))-1)]
     print ("This car's sellback price in 10 years is: ", int(depval10yr))
+ 
