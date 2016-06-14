@@ -377,7 +377,7 @@ while menu_option != 0:
                 print ("\t\t\t$" + str("{0:.2f}".format(Depreciation_Values[10])) + " in 10 years" )
             
             # Calculate Maintenance Per Mile
-            maint_per_mile = 440/15000 # maintenance per year / miles per year = maintenance per mile
+            maint_per_mile = (3906.765451+price*0.042379218)/(5*15000) # maintenance per year / miles per year = maintenance per mile
             
             # Create a list based off of the total cost each year in T (used j because this is within a for loop with i as the variable)
             Total_Costs = np.zeros(len(T)) 
